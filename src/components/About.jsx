@@ -4,16 +4,16 @@ import './About.css';
 
 const stats = [
   { value: '1.5+', label: 'Years Experience', icon: '🧑‍💻' },
-  { value: '15×', label: 'MTTD Improvement', icon: '⚡' },
-  { value: '70%', label: 'Provisioning Time Reduced', icon: '🚀' },
+  { value: '18×', label: 'Faster Deployments', icon: '⚡' },
+  { value: '5%', label: 'Change Failure Rate', icon: '🚀' },
   { value: '0', label: 'HIGH Security Findings', icon: '🛡️' },
 ];
 
 const highlights = [
-  { icon: '☁️', title: 'Cloud-Native Infrastructure', desc: 'Designing and operating scalable AWS platforms with VPC, EKS, RDS Aurora, and S3 from infrastructure as code.' },
-  { icon: '📊', title: 'Full-Stack Observability', desc: 'Unified metrics, logs, and traces using Prometheus, Grafana, Loki, and Jaeger — Reduced MTTD from 22 min to 87 sec.' },
-  { icon: '🔐', title: 'Security-First Approach', desc: 'Policy-as-code with Checkov & tfsec, zero HIGH findings, Trivy container scanning, and AWS Secrets Manager.' },
-  { icon: '🔄', title: 'GitOps & CI/CD', desc: 'Automated delivery pipelines with GitHub Actions, ArgoCD, and Docker — zero-downtime deployments at scale.' },
+  { icon: '⚙️', title: 'CI/CD Pipeline Architecture', desc: 'Multi-stage GitHub Actions pipelines (lint → Trivy scan → SonarQube gate → ECR push) slashing deploy time from 3 hours to under 10 minutes.' },
+  { icon: '🔄', title: 'GitOps & ArgoCD Delivery', desc: 'Pull-based, self-healing deployments via ArgoCD — reconciles EKS cluster state within 2 minutes of any Helm values change, zero manual kubectl.' },
+  { icon: '🔐', title: 'DevSecOps & Policy-as-Code', desc: 'Trivy blocking CRITICAL CVEs, Checkov zero HIGH findings, AWS Secrets Manager + OIDC, no long-lived keys — security baked into every pipeline stage.' },
+  { icon: '☁️', title: 'Multi-Environment AWS Platform', desc: 'Reusable Terraform modules across dev, staging and prod — VPC, EKS, RDS Aurora, ALB, Route53 — with automated drift detection every 6 hours.' },
 ];
 
 const containerVariants = {
@@ -59,15 +59,15 @@ export default function About() {
               </div>
               <div className="bio-content">
                 <p className="bio-text">
-                  Results-driven <span className="text-cyan">DevOps & Cloud Engineer</span> with <span className="text-cyan">1.5+ years</span> of hands-on experience designing and operating cloud-native infrastructure on AWS.
+                  Results-driven <span className="text-cyan">DevOps &amp; Cloud Engineer</span> with <span className="text-cyan">1.5+ years</span> of hands-on experience designing and operating cloud-native infrastructure on AWS — from IaC provisioning to Kubernetes orchestration and full-stack observability.
                 </p>
                 <br />
                 <p className="bio-text">
-                  Proven ability to provision multi-environment platforms using <span className="text-purple">Terraform</span>, deploy full-stack observability systems (<span className="text-purple">Prometheus, Grafana, Loki, Jaeger</span>), and implement SLO-based alerting that reduced Mean Time to Detect from <span className="text-green">22 minutes to under 90 seconds</span>.
+                  Proven ability to architect production-grade <span className="text-purple">CI/CD pipelines</span> using GitHub Actions, ArgoCD, and GitOps principles — delivering <span className="text-purple">zero-downtime Blue/Green deployments</span> to AWS EKS. Skilled in provisioning multi-environment platforms via reusable <span className="text-purple">Terraform modules</span> with remote state management, policy-as-code scanning (Checkov, tfsec), and automated drift detection every 6 hours.
                 </p>
                 <br />
                 <p className="bio-text">
-                  Comfortable working across the full DevOps lifecycle — from <span className="text-cyan">Infrastructure as Code</span> and CI/CD pipelines to <span className="text-cyan">container orchestration</span> on Kubernetes and production monitoring.
+                  Comfortable across the full DevOps lifecycle — from <span className="text-cyan">Infrastructure as Code</span> and container security (Trivy, SonarQube) to <span className="text-cyan">Kubernetes orchestration</span>, secrets management (AWS Secrets Manager + OIDC), and DORA metrics observability with <span className="text-green">Prometheus and Grafana</span>.
                 </p>
               </div>
             </div>

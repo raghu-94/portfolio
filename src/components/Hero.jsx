@@ -12,14 +12,16 @@ const ROLES = [
 
 const TERMINAL_LINES = [
   { prompt: '~$', cmd: 'whoami', delay: 500 },
-  { prompt: '', output: 'g.raghavendra_rao', delay: 800, isOutput: true, accent: true },
-  { prompt: '~$', cmd: 'cat skills.yaml | grep cloud', delay: 1400 },
-  { prompt: '', output: 'cloud: [AWS, EKS, VPC, RDS, Route53, CloudWatch]', delay: 1700, isOutput: true },
-  { prompt: '~$', cmd: 'terraform apply --target=career', delay: 2400 },
-  { prompt: '', output: 'Plan: 3 to add (AWS · Kubernetes · Observability)', delay: 2700, isOutput: true },
-  { prompt: '', output: '✓ Apply complete! MTTD reduced: 22m → 87s 🚀', delay: 3200, isOutput: true, success: true },
-  { prompt: '~$', cmd: 'echo "Open to opportunities 👋"', delay: 4000 },
-  { prompt: '', output: 'Open to opportunities 👋', delay: 4300, isOutput: true, accent: true },
+  { prompt: '', output: 'g.raghavendra_rao  |  DevOps & Cloud Engineer', delay: 800, isOutput: true, accent: true },
+  { prompt: '~$', cmd: 'cat pipeline.yaml | grep deploy-time', delay: 1400 },
+  { prompt: '', output: 'deploy_time: "3 hours → under 10 minutes ⚡"', delay: 1700, isOutput: true },
+  { prompt: '~$', cmd: 'argocd app sync novapay --strategy=blue-green', delay: 2500 },
+  { prompt: '', output: 'Switching traffic: blue → green (k6 verified, 0 errors)', delay: 2850, isOutput: true },
+  { prompt: '', output: '✓ Zero-downtime deployment complete. Change failure: 40% → 5% 🚀', delay: 3400, isOutput: true, success: true },
+  { prompt: '~$', cmd: 'terraform plan --drift-detect  # runs every 6h via GitHub Actions', delay: 4200 },
+  { prompt: '', output: '✓ No drift detected. Infrastructure matches declared state.', delay: 4600, isOutput: true, success: true },
+  { prompt: '~$', cmd: 'echo "Open to opportunities 👋"', delay: 5200 },
+  { prompt: '', output: 'Open to opportunities 👋', delay: 5500, isOutput: true, accent: true },
 ];
 
 function useTypewriter(text, speed = 35, start = true) {
@@ -193,9 +195,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1 }}
           >
-            Results-driven DevOps & Cloud Engineer with <strong>1.5+ years</strong> of
-            hands-on experience designing cloud-native infrastructure on AWS. Reduced
-            MTTD from <strong>22 minutes → 87 seconds</strong> using full-stack observability.
+            Results-driven <strong>DevOps & Cloud Engineer</strong> with <strong>1.5+ years</strong> architecting
+            production-grade CI/CD pipelines, GitOps delivery, and multi-environment AWS platforms with
+            zero-downtime <strong>Blue/Green deployments</strong> and policy-as-code security.
           </motion.p>
 
           <motion.div
@@ -210,13 +212,13 @@ export default function Hero() {
             </div>
             <div className="stat-divider" />
             <div className="stat">
-              <span className="stat-value">15×</span>
-              <span className="stat-label">MTTD Improvement</span>
+              <span className="stat-value">18×</span>
+              <span className="stat-label">Deploy Faster</span>
             </div>
             <div className="stat-divider" />
             <div className="stat">
-              <span className="stat-value">3</span>
-              <span className="stat-label">Environments</span>
+              <span className="stat-value">5%</span>
+              <span className="stat-label">Change Failure Rate</span>
             </div>
           </motion.div>
 

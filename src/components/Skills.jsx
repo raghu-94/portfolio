@@ -46,14 +46,16 @@ const skillCategories = [
   },
   {
     id: 'cicd',
-    label: 'CI/CD',
+    label: 'CI/CD & GitOps',
     icon: '🔄',
     color: '#00d4ff',
     skills: [
       { name: 'GitHub Actions', level: 88, icon: '🐙' },
+      { name: 'ArgoCD', level: 85, icon: '🔄' },
       { name: 'Git', level: 92, icon: '📝' },
       { name: 'Docker Hub', level: 85, icon: '📦' },
       { name: 'Amazon ECR', level: 82, icon: '🗂️' },
+      { name: 'SonarQube', level: 80, icon: '✅' },
     ],
   },
   {
@@ -72,14 +74,16 @@ const skillCategories = [
   },
   {
     id: 'security',
-    label: 'Security',
+    label: 'Security & Secrets',
     icon: '🛡️',
     color: '#f472b6',
     skills: [
-      { name: 'Trivy', level: 85, icon: '🔍' },
+      { name: 'Trivy (SBOM)', level: 85, icon: '🔍' },
       { name: 'tfsec', level: 85, icon: '🛡️' },
       { name: 'Checkov', level: 88, icon: '✅' },
-      { name: 'Secrets Manager', level: 82, icon: '🔑' },
+      { name: 'Secrets Manager', level: 85, icon: '🔑' },
+      { name: 'Ext. Secrets Operator', level: 80, icon: '🔐' },
+      { name: 'OIDC', level: 82, icon: '🌐' },
     ],
   },
   {
@@ -90,8 +94,19 @@ const skillCategories = [
     skills: [
       { name: 'Bash', level: 88, icon: '💻' },
       { name: 'YAML', level: 92, icon: '📄' },
+      { name: 'HCL (Terraform)', level: 88, icon: '🔧' },
       { name: 'Node.js', level: 75, icon: '🟢' },
       { name: 'JSON', level: 90, icon: '{}' },
+    ],
+  },
+  {
+    id: 'loadtesting',
+    label: 'Load Testing & QA',
+    icon: '📈',
+    color: '#fb923c',
+    skills: [
+      { name: 'k6', level: 82, icon: '⚡' },
+      { name: 'SonarQube', level: 80, icon: '✅' },
     ],
   },
   {
@@ -100,11 +115,14 @@ const skillCategories = [
     icon: '♾️',
     color: '#34d399',
     skills: [
-      { name: 'GitOps', level: 85, icon: '🔄' },
+      { name: 'GitOps', level: 88, icon: '🔄' },
+      { name: 'DevSecOps', level: 85, icon: '🛡️' },
+      { name: 'Blue/Green Deploy', level: 88, icon: '🚦' },
+      { name: 'DORA Metrics', level: 85, icon: '📊' },
       { name: 'SLO/SLA Alerting', level: 88, icon: '🎯' },
+      { name: 'Drift Detection', level: 85, icon: '🔎' },
       { name: 'Chaos Engineering', level: 80, icon: '💥' },
-      { name: 'Zero-downtime', level: 85, icon: '⬆️' },
-      { name: 'DRY IaC', level: 90, icon: '♾️' },
+      { name: 'Incident Response', level: 82, icon: '🚨' },
     ],
   },
 ];
