@@ -59,15 +59,15 @@ export default function About() {
               </div>
               <div className="bio-content">
                 <p className="bio-text">
-                  Results-driven <span className="text-cyan">DevOps &amp; Cloud Engineer</span> with <span className="text-cyan">1.5+ years</span> of hands-on experience designing and operating cloud-native infrastructure on AWS — from IaC provisioning to Kubernetes orchestration and full-stack observability.
+                  Hi, I'm Raghavendra. I'm a <span className="text-cyan">DevOps &amp; Cloud Engineer</span> with <span className="text-cyan">1.5+ years</span> of core, hands-on experience building AWS infrastructure. Put simply, I care about building systems that don't break at 2 AM.
                 </p>
                 <br />
                 <p className="bio-text">
-                  Proven ability to architect production-grade <span className="text-purple">CI/CD pipelines</span> using GitHub Actions, ArgoCD, and GitOps principles — delivering <span className="text-purple">zero-downtime Blue/Green deployments</span> to AWS EKS. Skilled in provisioning multi-environment platforms via reusable <span className="text-purple">Terraform modules</span> with remote state management, policy-as-code scanning (Checkov, tfsec), and automated drift detection every 6 hours.
+                  I spend most of my days writing <span className="text-purple">Terraform modules</span> to provision multi-environment platforms and building secure, automated <span className="text-purple">CI/CD pipelines</span>. I generally prefer pushing <span className="text-purple">zero-downtime Blue/Green deployments</span> into EKS using GitHub Actions and ArgoCD, ensuring code ships cleanly from local dev all the way out to production.
                 </p>
                 <br />
                 <p className="bio-text">
-                  Comfortable across the full DevOps lifecycle — from <span className="text-cyan">Infrastructure as Code</span> and container security (Trivy, SonarQube) to <span className="text-cyan">Kubernetes orchestration</span>, secrets management (AWS Secrets Manager + OIDC), and DORA metrics observability with <span className="text-green">Prometheus and Grafana</span>.
+                  If there's a manual deployment step, I script it. If infrastructure drifts, I write a Checkov policy to catch it. From <span className="text-cyan">container security</span> (Trivy, SonarQube) and <span className="text-cyan">Kubernetes orchestration</span>, to tracking real-time DORA metrics with <span className="text-green">Prometheus and Grafana</span> — I try to build platforms that let developers focus almost entirely on writing code, rather than fighting servers.
                 </p>
               </div>
             </div>

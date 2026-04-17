@@ -195,9 +195,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1 }}
           >
-            Results-driven <strong>DevOps & Cloud Engineer</strong> with <strong>1.5+ years</strong> architecting
-            production-grade CI/CD pipelines, GitOps delivery, and multi-environment AWS platforms with
-            zero-downtime <strong>Blue/Green deployments</strong> and policy-as-code security.
+            I'm a <strong>DevOps & Cloud Engineer</strong> who builds resilient, automated infrastructure on AWS. 
+            I focus on eliminating manual toil through <strong>Terraform</strong> and reducing deployment anxiety 
+            using secure, zero-downtime <strong>CI/CD pipelines</strong>.
           </motion.p>
 
           <motion.div
